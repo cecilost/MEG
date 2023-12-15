@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper,oneside]{report}
+\usepackage{helvet}
+\usepackage{helvet}
+\usepackage{tgbonum}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array,booktabs}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{rotating}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{nth}
+\usepackage{graphicx}
+\usepackage[font=scriptsize]{caption}
+\usepackage[font=scriptsize]{subcaption}
+\usepackage{natbib}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{
+a4paper,total={210mm,297mm},
+left=17mm,
+right=17mm,
+top=20mm,
+bottom=20mm,
+}\newcommand*\rot{\rotatebox{90}}
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+\begin{document}
+\author{Veronika Shamova}
+\date{\taday}
+\section*{Preprocessing report:}
+Time elapsed:  1000.4228\\ 
+\subsection*{1. Data information:}
+Subject ID: 
+\\ Original sampling frequency: 1000 
+\\ Original data length in mins: 9.3833 
+\\ Number of channels: 1 
+\subsection*{2. Filtering:}
+Low pass filter cut-off: 1  45
+\subsection*{3. Downsampling:}
+\\ Original sampling frequency: 1000
+\\ New sampling frequency: 200
+\subsection*{4. Epoching:}
+Number of epochs: 112400 
+\\ Epoch length in samples: 400 
+\\ Epoch length in seconds: 2 
+\subsection*{5. Outlier epoch/channel rejection:}
+Number of rejected channels: 12 
+\\ Indices of rejected channels: 227  229  259  223  226  230  233  235  250  253  257  260 
+\\ Number of rejected epochs: 18 
+\\ Indices of rejected epochs: 11   78   79   80   81   98  103  140  151  157  175  176  177  192  205  245  259  260\\ 
+\\ Percentage of rejected epochs: 6.4057\\ 
+\includegraphics[width=14cm]{bad_channels.jpg}\\
+\includegraphics[width=14cm]{bad_trials.jpg}\\
+\subsection*{7. Channel interpolation:}
+Number of Interpolated channels: 12 
+\\ Indices of Interpolated channels: 227  229  259  223  226  230  233  235  250  253  257  260 
+\subsection*{ Spectra plots and topoplots:}
+\subsubsection*{After import:}
+ \includegraphics[width=14cm]{spectrum_after_import_mag.png}\\
+ \includegraphics[width=14cm]{topo_after_import_mag.png}\\
+\subsubsection*{After regressing eye and heart activity}
+\includegraphics[width=14cm]{spectrum_after_regression_mag.png}\\
+\includegraphics[width=14cm]{topo_after_regression_mag.png}\\
+\subsubsection*{After rejecting channels and trials and interpolation}
+\includegraphics[width=14cm]{spectrum_after_rej_mag.png}\\
+\includegraphics[width=14cm]{topo_after_rej_mag.png}\\
+\end{document}

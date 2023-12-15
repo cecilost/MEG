@@ -1,0 +1,39 @@
+{
+	"ContinuousHeadLocalization": true,
+	"DewarPosition": "upright",
+	"DigitizedHeadPoints": true,
+	"DigitizedLandmarks": true,
+	"ECGChannelCount": 1,
+	"ECOGChannelCount": 0,
+	"EEGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"EOGChannelCount": 2,
+	"EpochLength": 571,
+	"InstitutionAddress": "15 Chaucer Road, Cambridge, UK",
+	"InstitutionName": "University of Cambridge",
+	"InstitutionalDepartmentName": "Cognition and Brain-Sciences Unit (CBU)",
+	"MEGChannelCount": 306,
+	"MEGREFChannelCount": 0,
+	"Manufacturer": "Elekta\/Neuromag",
+	"ManufacturersModelName": "NeuroMag",
+	"MiscChannelCount": 13,
+	"PowerLineFrequency": 50,
+	"RecordingDuration": 571,
+	"RecordingType": "continuous",
+	"SEEGChannelCount": 0,
+	"SamplingFrequency": 1000,
+	"SoftwareFilters": {
+		"MaxFilter": "ver2.2",
+		"sss": {
+			"Correlation": 0.98,
+			"Window": 10,
+			"WindowUnits": "s",
+			"BadChannelCorrection": true,
+			"MotionCorrection": true
+		}
+	},
+	"SoftwareVersions": "MaxFilter 2.2",
+	"TaskDescription": "Resting state scan with eyes closed.",
+	"TaskName": "Resting State",
+	"TriggerChannelCount": 0
+}

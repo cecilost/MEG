@@ -1,0 +1,11 @@
+{
+	"MEGCoordinateSystem": "RAS",
+	"MEGCoordinateUnits": "cm",
+	"AnatomicalLandmarkCoordinates": {
+		"NAS": [-0.3485060733,108.6228214,-34.11855607],
+		"LPA": [-74.77847359,21.13945173,-62.59383149],
+		"RPA": [76.29833867,17.77059611,-66.52434651]
+	},
+	"AnatomicalLandmarkCoordinateUnits": "mm",
+	"AnatomicalLandmarkCoordinateSystem": "RAS"
+}

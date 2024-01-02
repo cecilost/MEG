@@ -7,5 +7,5 @@
 
 #### Power spectrum of raw magnetometers data 
 ![alt text](https://github.com/Erfan7bt/MEG/blob/main/camcan_results/sub-CC220098/spectrum_raw_after_import_mag.png?eaw=True)
-#### power spectrum after filtering, rejecting bad channels (interpolated?)and epochs, and regression of EOG ECG sensors
+#### power spectrum after filtering, rejecting bad channels (interpolated?) and epochs, and regression of EOG ECG sensors
 ![alt text](https://github.com/Erfan7bt/MEG/blob/main/camcan_results/sub-CC220098/spectrum_after_rej_mag.png?eaw=True)

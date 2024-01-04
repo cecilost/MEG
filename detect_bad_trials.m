@@ -3,6 +3,7 @@ trials = (1:length(data_seg.trial))';
 vartrials = zeros(length(data_seg.trial),1);
 for ntri =1:1:length(data_seg.trial)
     vartrials(ntri) = var(sum(data_seg.trial{1,ntri}(chantype,:))); 
+    % var sum change order ?
 end
 outliers = isoutlier(vartrials); %outside of 3 scaled abs deviations from the median
 badtrials = trials(outliers);

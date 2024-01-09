@@ -66,6 +66,7 @@ for i = 1:size(subjects) %in case for all the present subj
         cfgp.bsfilter = 'yes';
         cfgp.bsfreq = [48 52];
         datp= ft_preprocessing (cfgp);
+        %lp hp ??
         
         %saving the info
         info.freq = cfgp.bpfreq;
@@ -179,7 +180,7 @@ for i = 1:size(subjects) %in case for all the present subj
     timer = toc;
     info.time = timer;
      %% save
-    info.subject_id= 1;
+    info.subject_id= subj;
     disp(['This data is saved in ' [save_prep subj] ' under the name' subj]);
     ft_write_data([save_prep subj], data_seg, 'dataformat', 'matlab');
     save([save_report '/info.mat'],'info');

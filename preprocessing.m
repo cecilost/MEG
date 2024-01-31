@@ -68,10 +68,10 @@ for i = 1:1 %size(subjects) %in case for all the present subj
         datp= ft_preprocessing (cfgp);
         %lp hp ??
         
-        cfgp.lpfilter="yes";
-        cfgp.hpfilter="yes";
-        cfgp.lpfreq=48;
-        cfgp.hpfreq=52;
+        % cfgp.lpfilter="yes";
+        % cfgp.hpfilter="yes";
+        % cfgp.lpfreq=48;
+        % cfgp.hpfreq=52;
 
         %saving the info
         info.freq = cfgp.bpfreq;
